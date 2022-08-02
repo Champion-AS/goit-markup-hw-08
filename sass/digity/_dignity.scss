@@ -1,0 +1,86 @@
+.dignity {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+  &__text {
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    max-width: 270px;
+    margin-top: 10px;
+  }
+}
+
+.dignity ul,
+.section-images ul,
+.team ul,
+.clients ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+.dignity ul li {
+  gap: 30px;
+}
+
+.dignity__antenna::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-image: url(../images/antenna.svg);
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dignity__clock::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-image: url(../images/clock.svg);
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dignity__diagram::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-image: url(../images/diagram.svg);
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dignity__astronaut::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-image: url(../images/astronaut.svg);
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
