@@ -29,14 +29,26 @@ ul {
 }
 
 .container {
-  max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 h1,
 h2,
 h3,
@@ -50,6 +62,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .logo {
@@ -212,8 +226,14 @@ header .site-nav li a.current::after {
 }
 
 .dignity {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1199px) {
+  .dignity {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .dignity__title {
   color: var(--title-text-color);
@@ -234,15 +254,22 @@ header .site-nav li a.current::after {
   margin-top: 10px;
 }
 
-.dignity ul,
-.section-images ul,
-.team ul,
-.clients ul {
+.dignity ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   width: 100%;
   gap: 10px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 320px) {
+  .dignity ul {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .dignity ul {
+    justify-content: space-between;
+  }
 }
 
 .dignity ul li {
@@ -297,8 +324,26 @@ header .site-nav li a.current::after {
   background-position: center;
 }
 
+@media screen and (max-width: 1199px) {
+  .section-images {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-images {
+    padding-top: 0;
+  }
+}
 .section-images {
   padding-bottom: 94px;
+}
+
+.section-images ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
 }
 
 .section-images .title {
@@ -338,16 +383,6 @@ header .site-nav li a.current::after {
   left: 0;
 }
 
-.team__icon {
-  background-color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
-  max-height: 428px;
-  max-width: 270px;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .team__title--dreams {
   margin-bottom: 50px;
   font-weight: 700;
@@ -355,6 +390,31 @@ header .site-nav li a.current::after {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.team__icon {
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .team__icon {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .team__icon {
+    max-width: 270px;
+  }
+}
+
+.team__icon:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .team__united {
@@ -381,11 +441,25 @@ header .site-nav li a.current::after {
 }
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
 }
 
+@media screen and (min-width: 768px) {
+  .team ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .team ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .social {
   display: flex;
   justify-content: center;
@@ -412,6 +486,15 @@ header .site-nav li a.current::after {
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.clients ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .clients__title {
@@ -581,6 +664,26 @@ footer address {
 .nav-footer {
   margin-top: 20px;
 }
+@media screen and (min-width: 320px) {
+  .nav-footer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-footer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav-footer {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
 .title-footer {
   margin-bottom: 10px;
@@ -614,25 +717,75 @@ footer address {
   background-color: #2196f3;
 }
 
+@media screen and (min-width: 320px) {
+  .footer-nav {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
 .footer-social {
   display: flex;
   justify-content: center;
 }
-
+@media screen and (min-width: 320px) {
+  .footer-social {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
 .footer-container {
   display: flex;
-  align-items: baseline;
-  justify-content: flex-start;
-  gap: 70px;
+}
+@media screen and (min-width: 320px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .footer-container {
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 60px;
+    gap: 70px;
+  }
 }
 
 .footer-telegram {
-  width: 570px;
-  height: 86px;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 320px) {
+  .footer-telegram {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .footer-telegram {
+    width: 570px;
+    height: 86px;
+  }
 }
 
 .footer-form {
   display: flex;
+}
+@media screen and (min-width: 320px) {
+  .footer-form {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 .footer-input {

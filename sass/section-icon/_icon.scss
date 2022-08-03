@@ -1,5 +1,25 @@
+@media screen and (max-width: 1199px) {
+  .section-images {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-images {
+    padding-top: 0;
+  }
+}
+
 .section-images {
   padding-bottom: 94px;
+}
+
+.section-images ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
 }
 
 .section-images .title {

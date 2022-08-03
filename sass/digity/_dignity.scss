@@ -1,6 +1,11 @@
 .dignity {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1199px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__title {
     color: var(--title-text-color);
@@ -22,15 +27,20 @@
   }
 }
 
-.dignity ul,
-.section-images ul,
-.team ul,
-.clients ul {
+.dignity ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   width: 100%;
   gap: 10px;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 320px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1199px) {
+    justify-content: space-between;
+  }
 }
 
 .dignity ul li {

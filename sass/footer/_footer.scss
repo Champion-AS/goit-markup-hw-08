@@ -52,6 +52,20 @@ footer address {
 
 .nav-footer {
   margin-top: 20px;
+  @media screen and (min-width: 320px) {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .title-footer {
@@ -90,25 +104,76 @@ footer address {
   }
 }
 
+.footer-nav {
+  @media screen and (min-width: 320px) {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    // flex-direction: column;
+    // justify-content: center;
+    // gap: 60px;
+  }
+}
+
 .footer-social {
   display: flex;
   justify-content: center;
+  @media screen and (min-width: 320px) {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    // flex-direction: column;
+    // justify-content: center;
+    // gap: 60px;
+  }
 }
 
 .footer-container {
   display: flex;
-  align-items: baseline;
-  justify-content: flex-start;
-  gap: 70px;
+
+  @media screen and (min-width: 320px) {
+    flex-direction: column;
+    gap: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  @media screen and (min-width: 1199px) {
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 60px;
+    gap: 70px;
+  }
 }
 
 .footer-telegram {
-  width: 570px;
-  height: 86px;
+  width: 100%;
+  height: 100%;
+  @media screen and (min-width: 320px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1199px) {
+    width: 570px;
+    height: 86px;
+  }
 }
 
 .footer-form {
   display: flex;
+
+  @media screen and (min-width: 320px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 .footer-input {
