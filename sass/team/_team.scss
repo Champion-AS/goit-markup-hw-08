@@ -22,11 +22,11 @@
 
   @media screen and (min-width: 768px) {
     max-width: 354px;
-    // max-height: 374px;
+    max-height: 536px;
   }
   @media screen and (min-width: 1199px) {
     max-width: 270px;
-    // max-height: 260px;
+    max-height: 428px;
   }
 }
 
@@ -63,7 +63,7 @@
   background-color: #f5f4fa;
 }
 @media screen and (min-width: 768px) {
-  .team ul {
+  .team__size {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -71,7 +71,7 @@
   }
 }
 @media screen and (min-width: 1199px) {
-  .team ul {
+  .team__size {
     display: flex;
     flex-wrap: wrap;
   }
@@ -83,6 +83,7 @@
   margin-top: 16px;
   padding-left: 32px;
   padding-right: 32px;
+  gap: 10px;
 }
 
 .social__icon {

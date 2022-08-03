@@ -405,11 +405,13 @@ header .site-nav li a.current::after {
 @media screen and (min-width: 768px) {
   .team__icon {
     max-width: 354px;
+    max-height: 536px;
   }
 }
 @media screen and (min-width: 1199px) {
   .team__icon {
     max-width: 270px;
+    max-height: 428px;
   }
 }
 
@@ -447,7 +449,7 @@ header .site-nav li a.current::after {
 }
 
 @media screen and (min-width: 768px) {
-  .team ul {
+  .team__size {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -455,7 +457,7 @@ header .site-nav li a.current::after {
   }
 }
 @media screen and (min-width: 1199px) {
-  .team ul {
+  .team__size {
     display: flex;
     flex-wrap: wrap;
   }
@@ -466,6 +468,7 @@ header .site-nav li a.current::after {
   margin-top: 16px;
   padding-left: 32px;
   padding-right: 32px;
+  gap: 10px;
 }
 
 .social__icon {
@@ -664,24 +667,11 @@ footer address {
 .nav-footer {
   margin-top: 20px;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .nav-footer {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .nav-footer {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .nav-footer {
-    margin-left: 0;
-    margin-right: 0;
   }
 }
 
@@ -717,24 +707,26 @@ footer address {
   background-color: #2196f3;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .footer-nav {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
   }
 }
+
 .footer-social {
   display: flex;
   justify-content: center;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .footer-social {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
   }
 }
+
 .footer-container {
   display: flex;
 }
@@ -756,7 +748,6 @@ footer address {
   .footer-container {
     align-items: baseline;
     justify-content: flex-start;
-    gap: 60px;
     gap: 70px;
   }
 }
@@ -765,7 +756,7 @@ footer address {
   width: 100%;
   height: 100%;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .footer-telegram {
     text-align: center;
   }
@@ -780,11 +771,16 @@ footer address {
 .footer-form {
   display: flex;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .footer-form {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .footer-form {
+    gap: 12px;
   }
 }
 
